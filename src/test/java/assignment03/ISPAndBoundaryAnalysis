@@ -1,0 +1,134 @@
+Grading System
+
+Input Space Partitions
+
+Valid Scores:
+A: 90 to 100
+B: 80 to 89
+C: 70 to 79
+D: 60 to 69
+F: 0 to 59
+
+Invalid Scores:
+Below 0 (e.g., -1, -5)
+Above 100 (e.g., 101, 150)
+
+Test Cases
+
+Valid Scores
+Case 1: Score = 90 - Expected: "A"
+Case 2: Score = 92 - Expected: "A"
+Case 3: Score = 100 - Expected: "A"
+Case 4: Score = 80 - Expected: "B"
+Case 5: Score = 82 - Expected: "B"
+Case 6: Score = 85 - Expected: "B"
+Case 7: Score = 70 - Expected: "C"
+Case 8: Score = 72 - Expected: "C"
+Case 9: Score = 75 - Expected: "C"
+Case 10: Score = 60 - Expected: "D"
+Case 11: Score = 62 - Expected: "D"
+Case 12: Score = 65 - Expected: "D"
+Case 13: Score = 0 - Expected: "F"
+Case 14: Score = 50 - Expected: "F"
+Case 15: Score = 59 - Expected: "F"
+
+Invalid Scores
+Case 16: Score = -3 - Expected: "Invalid score"
+Case 17: Score = -1 - Expected: "Invalid score"
+Case 18: Score = -10 - Expected: "Invalid score"
+Case 19: Score = 101 - Expected: "Invalid score"
+Case 20: Score = 150 - Expected: "Invalid score"
+
+Boundary Value Analysis
+
+Valid Boundaries
+Lower Bound of A: Score = 90 - Expected: "A"
+Upper Bound of A: Score = 100 - Expected: "A"
+Lower Bound of B: Score = 80 - Expected: "B"
+Upper Bound of B: Score = 89 - Expected: "B"
+Lower Bound of C: Score = 70 - Expected: "C"
+Upper Bound of C: Score = 79 - Expected: "C"
+Lower Bound of D: Score = 60 - Expected: "D"
+Upper Bound of D: Score = 69 - Expected: "D"
+Lower Bound of F: Score = 0 - Expected: "F"
+Upper Bound of F: Score = 59 - Expected: "F"
+
+Invalid Boundaries
+Below Valid Range: Score = -1 - Expected: "Invalid score"
+Above Valid Range: Score = 101 - Expected: "Invalid score"
+
+=============================================================
+
+
+Input Space Partitions
+
+Valid Eligibility Criteria:
+Age: 18 and above
+Income: 25,000 and above
+Credit Score: 600 to 850
+Loan Amount: Must not exceed 50% of income
+
+Invalid Eligibility Criteria:
+Age: Below 18 (e.g., 17)
+Income: Below 25,000 (e.g., 24,999)
+Credit Score: Below 600 or above 850 (e.g., 500, 860)
+Loan Amount: Exceeds 50% of income
+
+Test Cases
+
+Valid Scores
+Case 1: Age = 20, Income = 30,000, Credit Score = 700, Loan Amount = 10,000 - Expected: "Approved"
+
+Invalid Scores
+Case 2: Age = 17, Income = 30,000, Credit Score = 700, Loan Amount = 10,000 - Expected: "Denied" (age)
+Case 3: Age = 20, Income = 20,000, Credit Score = 700, Loan Amount = 10,000 - Expected: "Denied" (income)
+Case 4: Age = 20, Income = 30,000, Credit Score = 500, Loan Amount = 10,000 - Expected: "Denied" (credit score)
+Case 5: Age = 20, Income = 30,000, Credit Score = 700, Loan Amount = 20,000 - Expected: "Denied" (loan amount)
+
+Boundary Value Analysis
+
+Valid Boundaries
+Lower Bound of Age: Age = 18, Income = 25,000, Credit Score = 600, Loan Amount = 12,500 - Expected: "Approved"
+Upper Bound of Credit Score: Age = 20, Income = 30,000, Credit Score = 850, Loan Amount = 15,000 - Expected: "Approved"
+
+Invalid Boundaries
+Below Valid Age: Age = 17 - Expected: "Denied"
+Below Valid Income: Age = 20, Income = 24,999, Credit Score = 700, Loan Amount = 10,000 - Expected: "Denied"
+Below Valid Credit Score: Age = 20, Income = 30,000, Credit Score = 599, Loan Amount = 10,000 - Expected: "Denied"
+Above Valid Credit Score: Age = 20, Income = 30,000, Credit Score = 851, Loan Amount = 10,000 - Expected: "Denied"
+Loan Amount Exceeds 50%: Age = 20, Income = 30,000, Credit Score = 700, Loan Amount = 15,001 - Expected: "Denied"
+
+=============================================================
+
+Input Space Partitions
+
+Valid Triangle Types:
+Equilateral: All sides equal (e.g., a = 3, b = 3, c = 3)
+Isosceles: Two sides equal (e.g., a = 3, b = 3, c = 5)
+Scalene: All sides different (e.g., a = 3, b = 4, c = 5)
+
+Invalid Triangle Conditions:
+Not a triangle: The sum of any two sides must be greater than the third (e.g., a + b ≤ c)
+
+Test Cases
+
+Valid Triangle Types
+Case 1: a = 3, b = 3, c = 3 - Expected: "Equilateral"
+Case 2: a = 3, b = 4, c = 5 - Expected: "Scalene"
+Case 3: a = 3, b = 3, c = 5 - Expected: "Isosceles"
+
+Invalid Triangle Conditions
+Case 4: a = 1, b = 2, c = 3 - Expected: "Not a triangle"
+Case 5: a = 0, b = 1, c = 1 - Expected: "Not a triangle"
+Case 6: a = 1, b = 1, c = 2 - Expected: "Not a triangle"
+
+Boundary Value Analysis
+
+Valid Boundaries
+Equilateral at minimal values: a = 1, b = 1, c = 1 - Expected: "Equilateral"
+Isosceles at minimal values: a = 1, b = 1, c = 2 - Expected: "Not a triangle" (just on the edge)
+Scalene at minimal values: a = 2, b = 3, c = 4 - Expected: "Scalene"
+
+Invalid Boundaries
+Zero side length: a = 0, b = 1, c = 1 - Expected: "Not a triangle"
+Negative side lengths: a = -1, b = 2, c = 2 - Expected: "Not a triangle"
