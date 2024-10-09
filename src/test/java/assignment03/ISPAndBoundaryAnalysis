@@ -58,7 +58,7 @@ Below Valid Range: Score = -1 - Expected: "Invalid score"
 Above Valid Range: Score = 101 - Expected: "Invalid score"
 
 =============================================================
-
+Loan Eligibility
 
 Input Space Partitions
 
@@ -99,6 +99,7 @@ Above Valid Credit Score: Age = 20, Income = 30,000, Credit Score = 851, Loan Am
 Loan Amount Exceeds 50%: Age = 20, Income = 30,000, Credit Score = 700, Loan Amount = 15,001 - Expected: "Denied"
 
 =============================================================
+Triangle Type Classification
 
 Input Space Partitions
 
