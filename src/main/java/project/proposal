@@ -1,1 +1,13 @@
-This is where we figure out our project
+a. Introduction
+Overview of the Software Application/System:
+The Foreclosure Management System is a simple Java console application designed to assist real estate professionals in managing foreclosure listings. This application enables users to add, view, update, and delete foreclosure properties, providing key details such as location, price, status, and lender information. By streamlining the management of foreclosure properties, this application aids in tracking and facilitating the sale of distressed properties.
+
+Context and Importance of Testing:
+Testing the Foreclosure Management System is essential as it directly impacts the accuracy and reliability of foreclosure data. Errors in managing these listings can lead to financial losses or missed opportunities for buyers and sellers. Ensuring that the application functions correctly under various scenarios is critical for maintaining user trust and operational efficiency.
+
+Purpose and Objectives:
+The primary purpose of this testing project is to validate the functionality and performance of the Foreclosure Management System. The specific objectives include:
+
+Identifying critical bugs: Conduct thorough testing to discover any issues that may disrupt the management of foreclosure listings.
+Improving overall software quality: Ensure that the application meets user needs and performs as expected in various conditions.
+Ensuring compliance with coding standards: Validate that the code adheres to best practices, enhancing maintainability and readability.
