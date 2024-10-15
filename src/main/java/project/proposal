@@ -11,3 +11,37 @@ The primary purpose of this testing project is to validate the functionality and
 Identifying critical bugs: Conduct thorough testing to discover any issues that may disrupt the management of foreclosure listings.
 Improving overall software quality: Ensure that the application meets user needs and performs as expected in various conditions.
 Ensuring compliance with coding standards: Validate that the code adheres to best practices, enhancing maintainability and readability.
+
+b. Objectives and Scope
+Objectives:
+The objectives of the testing project are to:
+Identify and fix critical bugs affecting the functionality of key features such as adding, updating, and deleting foreclosure properties.
+Improve the overall reliability and performance of the system to ensure smooth operation for end-users.
+Ensure that the application is compliant with industry-standard coding practices to facilitate future maintenance and scalability.
+
+Scope:
+The scope of testing will include:
+Testing core functionalities such as adding, updating, viewing, and deleting foreclosure listings.
+Testing the handling of property details such as price, location, and lender information.
+Ensuring the system operates correctly across different input scenarios (e.g., valid/invalid data entries).
+Performance testing to verify that the application handles a moderate volume of foreclosure listings efficiently.
+
+Exclusions:
+To keep the project manageable, the following areas will be excluded from testing:
+Security testing, as the system currently lacks authentication and user role management.
+Integration with external systems or APIs (future versions may include integrations, but this is beyond the current scope).
+
+c. Testing Strategies and Methodologies
+Testing Levels:
+Unit Testing: Individual components (such as classes and methods) will be tested to ensure they perform as expected.
+Integration Testing: Testing the interaction between different components of the system to ensure data flows correctly and modules work together seamlessly.
+System Testing: Full testing of the application’s functionalities in a real-world scenario to validate that the entire system meets its requirements.
+Acceptance Testing: Conduct user-oriented testing to ensure that the application satisfies the needs of real estate professionals.
+
+Testing Types:
+Functional Testing: Focus on validating that each feature of the Foreclosure Management System works according to the defined requirements.
+Performance Testing: Ensure the application can handle multiple foreclosure entries without slowing down or crashing.
+Usability Testing: Evaluate the user experience of managing listings to ensure that the system is intuitive and efficient for real estate professionals.
+
+Justification:
+These testing strategies cover the critical areas of the application, ensuring that all core functionalities are thoroughly tested. Performance and usability testing are included to ensure the system not only works correctly but also meets user expectations for speed and ease of use.
