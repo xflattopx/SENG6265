@@ -1,0 +1,13 @@
+1. Identify whether the mutant program is killed or alive based on
+the test cases provided.
+
+The mutant program is killed based off the test cases because 2000 % 400 will evaluate to false
+instead of true.
+
+2) Determine whether the mutant is killed or alive.
+Here’s the solution in both Java and Python.
+
+The mutant program is killed because 25 and 16 are perfect squares thus the mutant is identified basaed
+on the test cases.
+
+3) Calculate mutation score for the following:
