@@ -11,3 +11,12 @@ The mutant program is killed because 25 and 16 are perfect squares thus the muta
 on the test cases.
 
 3) Calculate mutation score for the following:
+
+Total number of mutants: 4
+Test Case 1: (3/4) * 100 = 75%
+Test Case 2: (1/4) * 100 = 25%
+Test Case 3: (3/4) * 100 = 75%
+Test Case 4: (1/4) * 100 = 25%
+Test Case 5: (2/4) * 100 = 50%
+==================================
+Average score = 50%
