@@ -91,5 +91,5 @@ public class JqwikTests {
                 .withCharRange('A', 'Z')
                 .ofLength(1);
     }
-    
+
 }
