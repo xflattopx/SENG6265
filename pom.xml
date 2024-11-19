@@ -27,6 +27,13 @@
           <artifactId>selenium-java</artifactId>
           <version>4.20.0</version> <!-- Check for the latest version -->
       </dependency>
+      <dependency>
+          <groupId>net.jqwik</groupId>
+          <artifactId>jqwik</artifactId>
+          <version>1.9.1</version> <!-- Use the latest version -->
+          <scope>test</scope>
+      </dependency>
+
   </dependencies>
     <build>
         <plugins>
