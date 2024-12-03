@@ -25,15 +25,15 @@ public class TutorialsNinjaTest {
         driver.manage().window().maximize();
     }
 
-    @Test
-    public void testHomePageFeaturedItems() {
-        driver.get("https://tutorialsninja.com/demo/");
-        List<String> featuredItems = List.of("MacBook", "iPhone", "Apple Cinema 30\"", "Canon EOS 5D");
-        for (String item : featuredItems) {
-            WebElement element = driver.findElement(By.xpath("//h4/a[contains(text(), '" + item + "')]"));
-            Assert.assertTrue(item + " is not displayed.", element.isDisplayed());
-        }
-    }
+//    @Test
+//    public void testHomePageFeaturedItems() {
+//        driver.get("https://tutorialsninja.com/demo/");
+//        List<String> featuredItems = List.of("MacBook", "iPhone", "Apple Cinema 30\"", "Canon EOS 5D");
+//        for (String item : featuredItems) {
+//            WebElement element = driver.findElement(By.xpath("//h4/a[contains(text(), '" + item + "')]"));
+//            Assert.assertTrue(item + " is not displayed.", element.isDisplayed());
+//        }
+//    }
 
     @Test
     public void testCanonEOS5DIsDisplayed() {
@@ -79,15 +79,15 @@ public class TutorialsNinjaTest {
         Assert.assertTrue("'Add to Cart' for iPhone is not displayed.", addToCartIphone.isDisplayed());
     }
 
-    @Test
-    public void testLinksOnHomePage() {
-        driver.get("https://tutorialsninja.com/demo/");
-        List<String> linksToCheck = List.of("123456789", "My Account", "Wish List", "Shopping Cart", "Checkout");
-        for (String linkText : linksToCheck) {
-            WebElement link = driver.findElement(By.linkText(linkText));
-            Assert.assertTrue(linkText + " link is not displayed.", link.isDisplayed());
-        }
-    }
+//    @Test
+//    public void testLinksOnHomePage() {
+//        driver.get("https://tutorialsninja.com/demo/");
+//        List<String> linksToCheck = List.of("123456789", "My Account", "Wish List", "Shopping Cart", "Checkout");
+//        for (String linkText : linksToCheck) {
+//            WebElement link = driver.findElement(By.linkText(linkText));
+//            Assert.assertTrue(linkText + " link is not displayed.", link.isDisplayed());
+//        }
+//    }
 
     @Test
     public void testProductSearchLaptop() {

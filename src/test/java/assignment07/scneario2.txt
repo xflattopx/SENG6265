@@ -1,0 +1,12 @@
+Single | Breakfast Only | Sea View | Credit Card
+Double | No Meals | Garden View | PayPal
+Suite | Half Board | City View | Debit Card
+Double | Full Board | Sea View | Bank Transfer
+Single | Half Board | Garden View | PayPal
+Suite | No Meals | City View | Debit Card
+Single | Full Board | City View | Bank Transfer
+Double | Breakfast Only | Sea View | Credit Card
+Suite | Breakfast Only | City View | Bank Transfer
+Single | No Meals | Sea View | Debit Card
+Double | Half Board | City View | Bank Transfer
+Suite | Full Board | Garden View | Credit Card
