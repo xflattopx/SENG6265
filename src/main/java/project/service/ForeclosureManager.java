@@ -3,7 +3,6 @@ package project.service;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import project.property.Property;
-import project.utils.ListUtils;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -56,24 +55,6 @@ public class ForeclosureManager {
         }
     }
 
-    public void viewProperty(Scanner scanner) {
-        System.out.print("Enter property id to view: ");
-        int id = Integer.parseInt(scanner.nextLine());
-
-//        Property property = database.getProperty(address);
-        while (!ListUtils.isValidIndex(id, properties)) {
-            System.out.print("Invalid id...\nPlease enter property id to view: ");
-            id = Integer.parseInt(scanner.nextLine());
-        }
-        Property property = properties.get(id - 1);
-
-        if (property != null) {
-            System.out.println("Property: " + property.getAddress());
-            System.out.println("Legal Status: " + property.getStatus());
-        } else {
-            System.out.println("Property not found.");
-        }
-    }
 
     public void updateStatus(Scanner scanner) {
         // Prompt for the address of the property to update
