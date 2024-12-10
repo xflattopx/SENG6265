@@ -1,6 +1,5 @@
 package project.app;
 
-
 import project.property.Property;
 import project.service.ForeclosureManager;
 
@@ -8,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static project.property.PropertyLoader.loadProperties;
-
 
 public class App {
     public static void main(String[] args) throws InterruptedException, Exception {
@@ -39,6 +37,9 @@ public class App {
                     foreclosureManager.updateStatus(scanner);
                     break;
                 case 4:
+                    foreclosureManager.removeProperty(scanner);  // Add remove property option
+                    break;
+                case 5:
                     System.out.println("\u001B[31mExiting...\u001B[0m"); // Red
                     return;
                 default:
@@ -66,6 +67,7 @@ public class App {
         System.out.println("\u001B[32m1. Add New Property\u001B[0m"); // Green
         System.out.println("\u001B[32m2. View Properties\u001B[0m"); // Green
         System.out.println("\u001B[32m3. Update Foreclosure Status\u001B[0m"); // Green
-        System.out.println("\u001B[32m4. Exit\u001B[0m\n"); // Green
+        System.out.println("\u001B[32m4. Remove Property\u001B[0m"); // Green - New option for removing a property
+        System.out.println("\u001B[32m5. Exit\u001B[0m\n"); // Green
     }
 }

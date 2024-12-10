@@ -1,0 +1,23 @@
+[
+  {
+    "category": "COMMERCIAL",
+    "type": "RETAIL",
+    "address": "707 Market Street, Riverdale",
+    "status": "SOLD",
+    "price": 500000
+  },
+  {
+    "category": "RESIDENTIAL",
+    "type": "HOUSE",
+    "address": "1234 Elm St",
+    "status": "FORECLOSED",
+    "price": 300000
+  },
+  {
+    "category": "RESIDENTIAL",
+    "type": "APARTMENT",
+    "address": "7890 Pine St, Uptown",
+    "status": "AVAILABLE",
+    "price": 400000
+  }
+]
