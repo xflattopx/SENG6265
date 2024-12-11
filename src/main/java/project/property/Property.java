@@ -16,14 +16,6 @@ public class Property {
         this.price = price;
     }
 
-    //Getters
-    public String getCategory() {
-        return this.category;
-    }
-
-    public String getType() {
-        return this.type;
-    }
 
     public String getAddress() {
         return this.address;
@@ -33,30 +25,10 @@ public class Property {
         return this.status;
     }
 
-    public int getPrice() {
-        return this.price;
-    }
-
-    // Setters
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public void setStatus(String status) {
         this.status = status;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
 
     @Override
     public String toString() {
